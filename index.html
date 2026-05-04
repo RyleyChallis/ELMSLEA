@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elms Lea | Award-winning Emergency Dentists in Brighton & Hove</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/query.css">
+
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="sidebar-content">
+                <a href="#treatments">Treatments</a>
+                <a href="#plans">Plans & Fees</a>
+                <a href="#team">Meet the Team</a>
+                <a href="#contact">Get in Touch</a>
+                <hr class="sidebar-divider">
+                <a href="tel:01273508000" class="sidebar-cta"><i class="fa-solid fa-phone"></i> 01273 508000</a>
+                <a href="booking.html" class="btn-primary">Book Online</a>
+            </div>
+        </div>
+
+        <nav>
+            <a class="logo" href="index.html">
+                <img src="css/img/logo.avif" alt="Elms Lea Dental Care Logo">
+            </a>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#treatments">Treatments</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#emergency">Emergency Dentistry</a></li>
+                        <li><a href="#implants">Dental Implants</a></li>
+                        <li><a href="#whitening">Teeth Whitening</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Plans & Fees</a></li>
+                <li><a class="desktop-only" href="">Meet the Team</a></li>
+                <li><a class="desktop-only" href="">Get in Touch</a></li>
+                <div class="nav-actions">
+                    <a href="tel:01273..." class="btn-primary">Book Now</a>
+                </div>
+            </ul>
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Emergency appointments available - <span class="price">£99</span></h1>
+                    <p>In pain or discomfort? Our expert team at Elms Lea provides rapid relief with same-day emergency dental care.</p>
+                    <div class="hero-actions">
+                        <a class="btn-primary" href="">Book an Appointment</a>
+                        <a class="btn-tertiary" href="">Contact Us</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <section id="treatments">
+            <h2>Treatments</h2>
+            <div class="treatment-grid">
+                <div class="treatment-card">
+                    <h3>Emergency Care</h3>
+                    <p>Same-day care for rapid relief from dental pain or trauma. We prioritize urgent cases to get you back to comfort quickly for a fixed fee of £99.</p>
+                </div>
+                <div class="treatment-card">
+                    <h3>Dental Implants</h3>
+                    <p>A permanent, sophisticated solution for missing teeth. Our high-precision implants look, feel, and function exactly like natural teeth.</p>
+                </div>
+                <div class="treatment-card">
+                    <h3>Teeth Whitening</h3>
+                    <p>Brighten your smile safely with professional-grade boutique treatments. We offer tailored whitening plans designed for brilliant, long-lasting results.</p>
+                </div>
+            </div>
+            <a class="btn-primary" href="">View All</a>
+        </section>
+
+        <section id="reviews">
+            <h2>What The Community Says</h2>
+            <div class="review-grid">
+                <div class="review-card">
+                    <p>"Pleasant welcome on arrival, the appointment was both excellent and thorough. I am very relieved to find a good ethical business with such a top-rate team."</p>
+                    <div class="author">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <h3>Kym Lyons</h3>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p>"The specialist care here is excellent and absolutely worth getting a second opinion for. They are really friendly and professional, providing a real improvement to my dental health."</p>
+                    <div class="author">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <h3>Richard Porter</h3>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p>"The communication is very good as they followed up with a detailed and friendly answer. The staff are all lovely and they always greet you with a genuine smile on arrival."</p>
+                    <div class="author">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <h3>Sue O'Malley</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="visit">
+            <h2>Visit Us</h2>
+            <div class="visit-container">
+                <div class="visit-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2430.516299214149!2d-0.15568562371270334!3d50.84824685864257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48758f899b6eb915%3A0x705624807c0cbff9!2sElms%20Lea%20Dental%20Care!5e1!3m2!1sen!2suk!4v1777835513352!5m2!1sen!2suk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="visit-info">
+                    <div class="visit-item">
+                        <h3>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Address:
+                        </h3>
+                        <p><a href="https://www.google.com/maps/place/Elms+Lea+Dental+Care/@50.8482469,-0.1556856,558m/data=!3m3!1e3!4b1!5s0x48758f8909ea3cb1:0xccb0a4913ac4499e!4m6!3m5!1s0x48758f899b6eb915:0x705624807c0cbff9!8m2!3d50.8482435!4d-0.1531107!16s%2Fg%2F1v0lk789?entry=ttu&g_ep=EgoyMDI2MDQyOS4wIKXMDSoASAFQAw%3D%3D">17 Elms Lea Avenue, BN1 6UG</a></p>
+                    </div>
+                    <div class="visit-item">
+                        <h3>
+                            <i class="fa-solid fa-envelope"></i>
+                            Email:
+                        </h3>
+                        <p><a href="">info@elmslea.com</a></p>
+                    </div>
+                    <div class="visit-item">
+                        <h3>
+                            <i class="fa-solid fa-phone"></i>
+                            Phone:
+                        </h3>
+                        <p><a href="tel:01273508000">01273 508000</a></p>
+                    </div>
+                </div>
+            </div>
+            <a class="btn-primary" href="" style="display: flex; margin: auto; margin-top: 75px; max-width: fit-content; white-space: nowrap;">Schedule Now</a>
+        </section>
+
+        <section id="questions">
+            <h2>Frequently Asked Questions</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">Do you offer emergency appointments? <i class="fa-solid fa-plus"></i></button>
+                    <div class="accordion-body">
+                        <p>Yes, we prioritise dental emergencies and aim to see patients on the same day whenever possible.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">What should I expect during my first visit? <i class="fa-solid fa-plus"></i></button>
+                    <div class="accordion-body">
+                        <p>Your initial consultation is a comprehensive 30-minute assessment. We will discuss your dental history, perform a thorough clinical examination, take any necessary X-rays, and create a personalised treatment plan tailored to your goals.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Do you offer teeth whitening or cosmetic consultations? <i class="fa-solid fa-plus"></i></button>
+                    <div class="accordion-body">
+                        <p>Yes, we offer a range of cosmetic treatments including professional home whitening kits and boutique in-surgery whitening. We recommend booking a consultation to determine which method is safest and most effective for your smile.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">I am a very nervous patient; how can you help? <i class="fa-solid fa-plus"></i></button>
+                    <div class="accordion-body">
+                        <p>We specialise in treating anxious patients with a gentle, patient-led approach. We take the time to explain every step of the process, offer "stop" signals so you are always in control, and can discuss further sedation options if required.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Do you offer dental payment plans? <i class="fa-solid fa-plus"></i></button>
+                    <div class="accordion-body">
+                        <p>We offer flexible payment options and dental plans to help spread the cost of your routine care. For larger restorative or cosmetic treatments, please speak with our team about our available financing options.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">What is your cancellation policy? <i class="fa-solid fa-plus"></i></button>
+                    <div class="accordion-body">
+                        <p>We kindly ask for at least 48 hours' notice if you need to reschedule or cancel your appointment. This allows us to offer the time to other patients who may need urgent care.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Is the practice wheelchair accessible? <i class="fa-solid fa-plus"></i></button>
+                    <div class="accordion-body">
+                        <p>Yes, our Elms Lea Avenue practice is fully accessible. If you have specific mobility requirements, please let our reception team know when booking so we can ensure your visit is as comfortable as possible.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="intro">
+            <a href="index.html"><img src="css/img/logo.avif" alt="Elms Lea Dental Care Logo"></a>
+            <p>Here at Elms Lea, our expert team at Elms Lea provides rapid relief with same-day emergency dental care. Contact us now to book an appointment.</p>
+        </div>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <div class="footer-links">
+                    <a href="index.html#treatments">Treatments</a>
+                    <a href="index.html#visit">Find Us</a>
+                    <a href="index.html#reviews">Reviews</a>
+                    <a href="index.html#treatments">Contact</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <div class="footer-links">
+                    <a href="index.html#treatments">Privacy Policy</a>
+                    <a href="index.html#visit">Cookie Policy</a>
+                    <a href="index.html#reviews">Terms & Conditions</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Treatments</h4>
+                <div class="footer-links">
+                    <a href="index.html#treatments">Emergency Care</a>
+                    <a href="index.html#visit">Dental Implants</a>
+                    <a href="index.html#reviews">Teeth Whitening</a>
+                    <a href="index.html#treatments">See More</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <div class="footer-links">
+                    <a href="index.html#treatments"><i class="fa-solid fa-envelope"></i>info@elmslea.com</a>
+                    <a href="index.html#visit"><i class="fa-solid fa-phone"></i>01273 508000</a>
+                    <a href="index.html#reviews">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ryley Challis Web Development</p>
+            <p>All Rights Reserved</p>
+        </div>
+    </footer>
+    <div id="overlay" class="overlay" onclick="closeNav()"></div>
+    <script src="css/script.js"></script>
+</body>
+</html>

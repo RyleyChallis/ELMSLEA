@@ -1,0 +1,69 @@
+@media (max-width: 1168px) {
+    .desktop-only {
+        display: none;
+    }
+}
+
+@media (max-width: 1120px) {
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-image {
+        width: 100% !important;
+        height: 30vh !important;
+        min-height: 30vh !important;
+        max-height: 300px !important;
+        flex-basis: 30vh !important;
+        overflow: hidden !important; 
+        display: block !important;
+        margin-top: auto;
+    }
+    .hero-image img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+    .hero-text {
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        padding-top: 75px;
+    }
+}
+
+@media (max-width: 786px) {
+    .nav-links {
+        display: none;
+    }
+    .openbtn {
+        display: block;
+        padding: 16px 20px;
+        font-size: 14px;
+        z-index: 9999;
+
+        background-color: transparent;
+        color: var(--main-text);
+        opacity: 0.8;
+    }
+    .hero-actions {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-image {
+        height: 25vh !important; /* Shorter on mobile */
+        min-height: 200px !important;
+    }
+    
+    .hero-image img {
+        object-position: center 15% !important; /* Keeps the face visible in a shorter window */
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-tertiary {
+        display: none;
+    }
+}

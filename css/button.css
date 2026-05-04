@@ -1,0 +1,66 @@
+.btn-primary {
+    background-color: var(--accent);
+    padding: 12px 24px;
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    font-family: 'inter', sans-serif;
+    color: var(--main-text);
+
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.btn-secondary {
+    border-radius: 50px;
+    border: 2px solid var(--main-text);
+
+    font-family: 'inter', sans-serif;
+    color: var(--main-text);
+
+    padding: 12px 24px;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+nav .btn-primary:hover, nav .btn-secondary:hover {
+    opacity: 0.5;
+}
+
+#treatments .btn-primary {
+    display: flex;
+    max-width: 150px;
+    align-items: center;
+    justify-content: center;
+    margin: 75px auto 50px auto;
+
+    padding: 16px 38px;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+main .btn-primary:hover {
+    background-color: #bca480;
+}
+
+.hero-actions {
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-actions a {
+    text-decoration: none;
+    color: var(--main-text);
+    font-family: 'inter', sans-serif;
+    font-size: 0.9rem;
+}
+
+.btn-tertiary {
+    background: transparent;
+    border-bottom: 2px solid var(--main-text);
+}
