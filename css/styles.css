@@ -450,20 +450,17 @@ footer .footer-grid {
     text-decoration: none;
     transition: all 0.3s ease;
 
-    font-size: 0.9rem;
-    font-family: 'inter', sans-serif;
-    color: var(--main-white);
-    opacity: 0.6;
-}
-
-footer .footer-col a {
     display: flex;
     align-items: center;
     gap: 10px;
+
+    font-size: 0.9rem;
+    font-family: 'inter', sans-serif;
+    color: #b3b3b3;
 }
 
 .footer-col a:hover {
-    opacity: 1;
+    color: #fff;
 }
 
 footer hr {
