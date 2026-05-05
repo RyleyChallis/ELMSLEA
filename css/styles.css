@@ -66,8 +66,7 @@ html, body {
 .hero-text p {
     font-size: 0.9rem;
     font-family: 'inter', serif;
-    color: var(--main-text);
-    opacity: 0.8;
+    color: #666666;
     max-width: 80%;
     margin-right: auto;
     margin-top: 0;
@@ -145,11 +144,9 @@ h2 {
     margin: 0 auto;
     line-height: 1.4;
 
-    font-size: clamp(0.8rem, 1vw, 1.2rem);
+    font-size: clamp(0.9rem, 1vw, 1.2rem);
     font-family: 'inter', sans-serif;
-    font-style: italic;
-    color: var(--main-text);
-    opacity: 0.8;
+    color: #666666;
 }
 
 .treatment-card:hover {
@@ -190,8 +187,8 @@ h2 {
     font-size: 0.9rem;
     font-family: 'inter', sans-serif;
     font-style: italic;
-    color: var(--main-text);
-    opacity: 0.6;
+    color: #666666;
+    line-height: 1.6;
     max-width: 80%;
     margin: 0 auto;
     padding-top: 75px;
@@ -286,8 +283,7 @@ h2 {
 .visit-info p a {
     font-size: clamp(0.9rem, 2vw, 1rem);
     font-family: 'inter', sans-serif;
-    color: var(--main-text);
-    opacity: 0.6;
+    color: #666666;
     text-decoration: none;
     transition: all 0.3s ease;
 }
