@@ -17,6 +17,7 @@ nav {
 nav .logo img {
     width: 160px;
     height: auto;
+    object-fit: cover;
 }
 
 .nav-links {

@@ -56,7 +56,7 @@ html, body {
 }
 
 #hero h1 {
-    font-size: clamp(2.4rem, 8vw, 3.2rem);
+    font-size: clamp(2.6rem, 8vw, 3.2rem);
     line-height: 1.1;
     font-family: 'playfair display', serif;
     color: var(--main-text);
@@ -85,7 +85,7 @@ section:nth-child(even) {
 }
 
 h2 {
-    font-size: clamp(1.8rem, 6vw, 2.2rem);
+    font-size: clamp(2rem, 6vw, 2.2rem);
     font-family: 'playfair display', serif;
     color: var(--main-text);
     text-align: center;
@@ -134,7 +134,7 @@ h2 {
 }
 
 .treatment-card h3 {
-    font-size: 1.4rem;
+    font-size: clamp(1.6rem, 4vw, 1.6rem);
     font-family: 'playfair display', serif;
     color: var(--main-text);
 }
@@ -320,7 +320,7 @@ h2 {
     background: none;
     border: none;
     font-family: 'Playfair Display', serif;
-    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-size: clamp(1.4rem, 2vw, 1.4rem);
     color: var(--main-text);
     cursor: pointer;
     transition: color 0.3s ease;
@@ -350,7 +350,7 @@ h2 {
 }
 
 .accordion-body p {
-    font-size: clamp(0.8rem, 2vw, 1rem);
+    font-size: clamp(0.9rem, 2vw, 1rem);
     font-family: 'inter', sans-serif;
     font-style: italic;
     color: var(--main-text);
@@ -392,7 +392,8 @@ footer .intro img {
 
     display: block !important;
     margin: 0 auto !important;
-    max-width: 180px;
+    max-width: auto;
+    object-fit: cover;
 
     position: relative;
     left: -20px;
