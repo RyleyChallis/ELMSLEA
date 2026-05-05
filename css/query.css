@@ -69,9 +69,9 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 40px 20px;
         text-align: left;
-        width: 90%;
-        justify-content: center;
-        margin: 0 auto;
+        max-width: 80%;
+        justify-items: center !important;
+        margin: 0 auto !important;
     }
 }
 
@@ -115,6 +115,15 @@
         display: flex !important;
         flex-direction: column !important;
     }
+    .footer-bottom {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 10px !important;
+        text-align: center;
+    }
+    .footer-bottom p {
+        margin: 0;
+    }
 }
 
 @media (max-width: 720px) {
@@ -133,6 +142,29 @@
     
     .hero-image img {
         object-position: center 15% !important; /* Keeps the face visible in a shorter window */
+    }
+}
+
+@media (max-width: 540px) {
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center !important;
+        align-items: center !important;
+        margin: 0 auto !important;
+    }
+    .footer-col {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important; /* Centers the heading and links vertically in the flex flow */
+        text-align: center !important;  /* Ensures the actual text lines up in the middle */
+        width: 100%;
+    }
+    .footer-col a {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        margin: 0 auto !important;
     }
 }
 
