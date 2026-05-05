@@ -86,17 +86,20 @@ section:nth-child(even) {
 }
 
 h2 {
-    font-size: 2.2rem;
+    font-size: clamp(1.8rem, 6vw, 2.2rem);
     font-family: 'playfair display', serif;
     color: var(--main-text);
     text-align: center;
     padding: 50px 0;
-    margin: 0;
+    margin: 0 auto;
+    max-width: 90%;
+    line-height: 1.2;
 }
 
 #treatments {
     background-color: #3b4048;
     min-height: 60vh !important;
+    padding-bottom: 0 !important;
     
     display: flex;
     flex-direction: column;
@@ -111,18 +114,20 @@ h2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
+    justify-content: center;
     max-width: 80%;
     gap: 30px;
 }
 
 .treatment-grid .treatment-card {
-    max-width: 375px;
+    max-width: 420px;
     min-height: 300px;
     background-color: var(--main-white);
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     border-radius: 6px;
 
+    padding: 20px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -140,7 +145,7 @@ h2 {
     margin: 0 auto;
     line-height: 1.4;
 
-    font-size: 0.9rem;
+    font-size: clamp(0.8rem, 1vw, 1.2rem);
     font-family: 'inter', sans-serif;
     font-style: italic;
     color: var(--main-text);
@@ -153,17 +158,22 @@ h2 {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
+#reviews {
+    padding-bottom: 75px;
+}
+
 .review-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     max-width: 80%;
     justify-content: center;
     margin: 0 auto;
+    gap: 30px;
 }
 
 .review-grid .review-card {
-    max-width: 380px;
-    min-height: 420px;
+    max-width: 420px;
+    min-height: 300px;
     transition: all 0.3s ease;
 
     display: flex;
@@ -177,12 +187,12 @@ h2 {
 }
 
 .review-card p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-family: 'inter', sans-serif;
     font-style: italic;
     color: var(--main-text);
     opacity: 0.6;
-    max-width: 90%;
+    max-width: 80%;
     margin: 0 auto;
     padding-top: 75px;
     text-align: center;
@@ -200,7 +210,7 @@ h2 {
 }
 
 .review-card h3 {
-    font-size: 1.4rem;
+    font-size: clamp(1.2rem, 4vw, 1.4rem);
     font-family: 'playfair display', serif;
     color: var(--main-text);
     text-align: center;
@@ -222,7 +232,7 @@ h2 {
 }
 
 #visit {
-    padding-bottom: 75px;
+    padding-bottom: 0;
 }
 
 #visit .visit-container {
@@ -261,11 +271,12 @@ h2 {
 
 .visit-info h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 1.1rem;
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
     color: var(--main-text);
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin: 0 0 5px 0;
+    margin: 0;
+    white-space: nowrap;
 }
 
 .visit-info h3 i {
@@ -273,13 +284,16 @@ h2 {
 }
 
 .visit-info p a {
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 2vw, 1rem);
     font-family: 'inter', sans-serif;
     color: var(--main-text);
     opacity: 0.6;
     text-decoration: none;
-    font-style: italic;
     transition: all 0.3s ease;
+}
+
+.visit-info i {
+    font-size: 17px !important;
 }
 
 .visit-info p a:hover {
@@ -292,7 +306,7 @@ h2 {
 }
 
 .accordion {
-    max-width: 60%;
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -301,6 +315,7 @@ h2 {
 }
 
 .accordion-item button {
+    gap: 10px;
     width: 100%;
     padding: 25px 0;
     display: flex;
@@ -309,18 +324,27 @@ h2 {
     background: none;
     border: none;
     font-family: 'Playfair Display', serif;
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 2vw, 1.2rem);
     color: var(--main-text);
     cursor: pointer;
     transition: color 0.3s ease;
+    text-align: left;
 }
 
-.accordion-item:hover button {
+.accordion-header i {
+    transition: all 0.3s ease;
+}
+
+.accordion-item:hover i {
     color: var(--accent);
 }
 
-.accordion-item.active button {
+.accordion-item.active i {
     color: #bca480;
+}
+
+.accordion-item.active .accordion-header i {
+    transform: rotate(45deg);
 }
 
 .accordion-body {
@@ -330,7 +354,7 @@ h2 {
 }
 
 .accordion-body p {
-    font-size: 0.9rem;
+    font-size: clamp(0.8rem, 2vw, 1rem);
     font-family: 'inter', sans-serif;
     font-style: italic;
     color: var(--main-text);
@@ -352,7 +376,7 @@ footer {
 footer .intro {
     display: flex;
     flex-direction: column;
-    max-width: 50%;
+    max-width: 100%;
     margin: 0 auto;
     align-items: center;
     padding-top: 50px;
@@ -370,9 +394,9 @@ footer .intro img {
 }
 
 footer .intro p {
-    max-width: 100%;
+    max-width: 90%;
 
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 2vw, 1rem);
     font-family: 'inter', sans-serif;
     color: var(--bg-cream);
     padding: 0 0 50px 0;

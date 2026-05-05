@@ -5,6 +5,7 @@
 
     text-decoration: none;
 
+    font-size: clamp(0.95rem, 2.5vw, 1.1rem);
     font-family: 'inter', sans-serif;
     color: var(--main-text);
 
@@ -35,11 +36,10 @@ nav .btn-primary:hover, nav .btn-secondary:hover {
     max-width: 150px;
     align-items: center;
     justify-content: center;
-    margin: 75px auto 50px auto;
 
+    margin: 50px 0;
     padding: 16px 38px;
     letter-spacing: 1px;
-    font-size: 0.9rem;
 }
 
 main .btn-primary:hover {
@@ -63,4 +63,5 @@ main .btn-primary:hover {
 .btn-tertiary {
     background: transparent;
     border-bottom: 2px solid var(--main-text);
+    font-size: clamp(0.95rem, 2.5vw, 1.1rem);
 }
