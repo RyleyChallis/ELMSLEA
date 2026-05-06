@@ -376,7 +376,7 @@ footer {
 footer .intro {
     display: flex;
     flex-direction: column;
-    max-width: 80%;
+    max-width: 60%;
     margin: 0 auto !important;
     margin-right: 20px;
     justify-content: center !important;
@@ -482,5 +482,5 @@ footer .footer-bottom {
 .footer-bottom p {
     font-size: 0.8rem;
     font-family: 'inter', sans-serif;
-    color: var(--main-white);
+    color: #9e9fa1;
 }
