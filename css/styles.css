@@ -482,5 +482,5 @@ footer .footer-bottom {
 .footer-bottom p {
     font-size: 0.8rem;
     font-family: 'inter', sans-serif;
-    color: #9e9fa1;
+    color: var(--main-white);
 }
