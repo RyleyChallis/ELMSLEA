@@ -24,7 +24,6 @@
     <link rel="icon" type="image/x-icon" href="css/img/favicon.ico">
     <link rel="canonical" href="https://ryleychallis.github.io/ELMSLEA/">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
     <meta name="robots" content="index, follow">
     <style>
     #hero {
@@ -53,6 +52,14 @@
         padding-left: 40px;
         width: 100%;
         gap: 25px;
+    }
+
+    .hero-img {
+        width: 100%;
+        height: auto; /* Let the aspect-ratio do the work */
+        aspect-ratio: 16 / 9; /* Reserves the exact same box size on all devices */
+        object-fit: cover;
+        display: block;
     }
 
     #hero h1 {
@@ -264,8 +271,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <noscript>
-    <link rel="stylesheet" href="css/query.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+        <link rel="stylesheet" href="css/query.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     </noscript>
 </head>
 <body>
@@ -324,12 +331,12 @@
                 </div>
                 <div class="hero-image">
                     <img src="css/img/landing.webp" 
-                    srcset="css/img/landing-mobile.webp 600w, css/img/landing.webp 1920w"
-                    sizes="(max-width: 600px) 600px, 1920px"
-                    alt="Elms Lea Dental Care" 
-                    class="hero-img" 
-                    fetchpriority="high"
-                    width="1920" height="1080">
+                        srcset="css/img/landing-mobile.webp 800w, css/img/landing.webp 1920w"
+                        sizes="100vw" 
+                        alt="Elms Lea Dental Care" 
+                        class="hero-img" 
+                        fetchpriority="high"
+                        width="1920" height="1080">
                 </div>
             </div>
         </section>
@@ -510,6 +517,8 @@
         </div>
     </footer>
     <div id="overlay" class="overlay" onclick="closeNav()"></div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
     <script src="css/script.js" defer></script>
 </body>
 </html>
