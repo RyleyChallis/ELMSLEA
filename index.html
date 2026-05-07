@@ -24,6 +24,7 @@
     <link rel="canonical" href="https://ryleychallis.github.io/ELMSLEA/">
 
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/query.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
@@ -67,8 +68,9 @@
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        background: url("css/img/landing.webp");
+        background-image: url("css/img/landing.webp");
         background-position: center;
+        object-fit: cover;
     }
 
     #hero h1 {
@@ -291,7 +293,7 @@
         </div>
 
         <nav>
-            <a class="logo" href="index.html" aria-label="Elms Lea Dental Care Home">
+            <a class="logo" href="index.html" aria-label="Elms Lea Dental Care">
                 <img src="css/img/logo.avif" alt="Elms Lea Dental Care Logo" width="219" height="68">
             </a>
             <ul class="nav-links">
@@ -301,6 +303,7 @@
                         <li><a href="#emergency">Emergency Dentistry</a></li>
                         <li><a href="#implants">Dental Implants</a></li>
                         <li><a href="#whitening">Teeth Whitening</a></li>
+                        <li><a aria-label="See All Treatments" href="#more">See All Treatments</a></li>
                     </ul>
                 </li>
                 <li><a href="">Plans & Fees</a></li>
