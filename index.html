@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preload" as="image" href="css/img/landing.webp" fetchpriority="high">
+    <link rel="preload" as="image" href="css/img/landing-mobile.webp" media="(max-width: 600px)" fetchpriority="high">
+    <link rel="preload" as="image" href="css/img/landing.webp" media="(min-width: 601px)" fetchpriority="high">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,16 +24,8 @@
     <link rel="icon" type="image/x-icon" href="css/img/favicon.ico">
     <link rel="canonical" href="https://ryleychallis.github.io/ELMSLEA/">
 
-    <link rel="stylesheet" href="css/all.min.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="css/query.css" media="print" onload="this.media='all'">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
     <meta name="robots" content="index, follow">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" media="print" onload="this.media='all'">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-
     <style>
     #hero {
         min-height: 100vh;
@@ -262,6 +255,17 @@
         visibility: visible;
     }
     </style>
+    <link rel="stylesheet" href="css/all.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/query.css" media="print" onload="this.media='all'">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" media="print" onload="this.media='all'">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+    <noscript>
+    <link rel="stylesheet" href="css/query.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    </noscript>
 </head>
 <body>
     <header>
@@ -318,10 +322,13 @@
                     </div>
                 </div>
                 <div class="hero-image">
-                <img src="css/img/landing.webp" width="1300px" height="830px"
+                    <img src="css/img/landing.webp" 
+                    srcset="css/img/landing-mobile.webp 600w, css/img/landing.webp 1920w"
+                    sizes="(max-width: 600px) 600px, 1920px"
                     alt="Elms Lea Dental Care" 
+                    class="hero-img" 
                     fetchpriority="high"
-                    style="top:0; left:0; width:100%; height:100%; object-fit: cover; object-position: 30% center;">
+                    width="1920" height="1080">
                 </div>
             </div>
         </section>
