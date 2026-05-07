@@ -106,9 +106,6 @@
         color: var(--main-text);
         opacity: 0.8;
     }
-    .hero-image {
-        display: none !important;
-    }
     .hero-actions {
         gap: 10px;
     }
@@ -144,6 +141,9 @@
 }
 
 @media (max-width: 720px) {
+    .hero-image {
+        display: none !important;
+    }
     .treatment-grid, .review-grid {
         display: flex !important;
         flex-direction: column !important;
