@@ -9,13 +9,16 @@ section:nth-child(2n) {
     scroll-margin-top: 100px
 }
 
+#reviews {
+    padding-bottom: 0 !important;
+}
+
 #questions,
 #treatments {
     min-height: 60vh !important
 }
 
-#questions,
-#reviews {
+#questions {
     padding-bottom: 75px
 }
 
@@ -70,32 +73,6 @@ html {
     --main-white: #fff;
     --white-two: #eeeeee;
     --bg-cream: #fcfaf8
-}
-
-#hero {
-    min-height: 100vh;
-    max-height: 100vh;
-    display: flex;
-    overflow: hidden
-}
-
-.hero-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-    display: flex
-}
-
-.hero-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    padding-bottom: 25px;
-    padding-left: 40px;
-    width: 100%;
-    gap: 25px
 }
 
 #treatments .treatment-grid,
@@ -269,7 +246,7 @@ h2 {
 }
 
 #visit {
-    padding-bottom: 0
+    padding-bottom: 0 !important;
 }
 
 #visit .visit-container {
@@ -339,6 +316,7 @@ h2 {
     background: 0 0;
     border: none;
     font-size: clamp(1.2rem, 2vw, 1.4rem);
+    font-family: 'playfair display', serif;
     cursor: pointer;
     transition: color .3s;
     text-align: left
