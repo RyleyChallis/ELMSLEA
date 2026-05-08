@@ -56,7 +56,7 @@
 
     .hero-img {
         width: 100%;
-        height: auto; /* Let the aspect-ratio do the work */
+        height: 100%; /* Let the aspect-ratio do the work */
         aspect-ratio: 16 / 9; /* Reserves the exact same box size on all devices */
         object-fit: cover;
         display: block;
@@ -112,7 +112,7 @@
         position: relative;
 
         font-size: 22px;
-        font-family: 'playfair display', serif;
+        font-family: 'inter', sans-serif;
         color: var(--main-text);
         text-decoration: none;
         transition: all 0.3s ease;
@@ -265,14 +265,17 @@
     <link rel="stylesheet" href="css/all.min.css" media="print" onload="this.media='all'">
     
     <link rel="stylesheet" href="css/query.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" media="print" onload="this.media='all'">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;700&display=swap" 
+        rel="stylesheet" 
+        media="print" 
+        onload="this.media='all'">
+
     <noscript>
         <link rel="stylesheet" href="css/query.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;700&display=swap">
     </noscript>
 </head>
 <body>
